@@ -1,5 +1,5 @@
 let weather = {
-   "apiKey": "763672026fad0da45c73914c4af4554e",
+   "apiKey": "763672026fad0da45c73914c4af4554e", // this should be hidden but for that i would need to do it on the server side using node
    fetchWeather: function(city) {
       fetch("https://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=metric&appid=" + this.apiKey).then((response) => response.json()).then((data) => this.displayWeather(data));
    },
